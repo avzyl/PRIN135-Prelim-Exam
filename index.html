@@ -253,5 +253,67 @@
                 <td>This is a <sup>superscripted</sup> text.</td>
             </tr>
         </table>
+
+        <!-- HTML Media -->
+        <h2>HTML Media <span><a href="">(top)</a></span></h2>
+        <table>
+            <tr>
+                <th>Description</th>
+                <th>Markup</th>
+                <th>Ouput</th>
+            </tr>
+
+            <tr>
+                <td>Image</td>
+                <td><code>&lt;img src="source.jpg" alt="alternate text"&gt;</code></td>
+                <td><img src="https://picsum.photos/320/240" alt="alternate text"></td>
+            </tr>
+
+            <tr>
+                <td>Video</td>
+                <td>&lt;video width="320" height="240" controls&gt; <br>
+                    &emsp;&thinsp;&nbsp;&ensp;&lt;source src="source.mp4" type="video/mp4"&gt; <br>
+                    &emsp;&thinsp;&nbsp;&ensp;&lt;source src="source.ogg" type="video/ogg"&gt; <br>
+                    &emsp;&thinsp;&nbsp;&ensp;Your browser does not support the video tag. <br>
+                    &lt;/video&gt;
+                </td>
+                <td>
+                    <code>
+                    <video width="320" height="240" controls>
+                        <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                        <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/ogg">
+                    Your browser does not support the video tag.
+                    </video>
+                    </code>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Audio</td>
+                <td>
+                    <code>
+                    &lt;audio&gt; controls <br>
+                    &emsp;&thinsp;&nbsp;&ensp;&lt;source src="source.ogg" type="audio/ogg"&gt; <br>
+                    &emsp;&thinsp;&nbsp;&ensp;&lt;source src="source.mp3" type="audio/mpeg"&gt; <br>
+                    &emsp;&thinsp;&nbsp;&ensp;Your browser does not support the audio element. <br>
+                    &lt;/audio&gt;
+                    </code>
+                </td>
+                <td>
+                    <audio> controls
+                        <source src="https://content.codecademy.com/courses/Semantic%20HTML/nyc-sounds.mov" type="audio/mpeg">
+                        <source src="https://content.codecademy.com/courses/Semantic%20HTML/nyc-sounds.mov" type="audio/ogg">
+                    Your browser does not support the audio element.
+                    </audio>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Frame</td>
+                <td><code>&lt;iframe src="url"&gt;&lt;/iframe&gt;</code></td>
+            </tr>
+        </table>
+
+
     </body>
 </html>
