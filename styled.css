@@ -8,6 +8,8 @@
     height: 100%;
     width: 250px;
     position: fixed;
+    top: 0;
+    left: 0;
     border-right: 3px solid gray;
     margin: 0;
     padding: 0;
@@ -46,6 +48,7 @@ div.content {
     margin-left: 250px;
     padding: 1px 16px;
     height: 1000px;
+    transition: margin-left 0.3s ease;
 }
 
 table {
@@ -72,7 +75,6 @@ td {
     padding: 1rem;
     border-radius: 0.2rem;
     width: 33.33%;
-    /* background-color: #fefff4; */
 }
 
 .headers,
@@ -95,6 +97,7 @@ footer {
     justify-content: center;
 }
 
+/* nobile styles */
 @media screen and (max-width: 425px) {
     .nav-title {
         padding: 0rem;
@@ -102,11 +105,12 @@ footer {
 
     .navbar {
         width: 100%;
-        height: auto;
-        position: top;
-        height: 25%;
+        height: 25vh;
+        position: fixed;
+        top: 0;
+        left: 0;
         border-bottom: 3px solid gray;
-        margin-top: -50%;
+        margin-top: 0;
     }
 
     .navbar a {
@@ -116,9 +120,9 @@ footer {
 
     div.content {
         margin-left: 0px;
-        margin-top: 50%;
+        margin-top: 27vh;
         padding: 1rem;
-        height: calc(100vh - 25%);
+        height: calc(100vh - 27vh);
         overflow-x: auto;
         white-space: nowrap;
     }
